@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div>
-        <h2>Google Form</h2>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Google Form</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Google Form</h1>
+        </header>
 
-    <div>
-        <form >
-            <div class="form-group">
-              <label for="fname"> First Name : </label> 
-              <input type="text"  name="fname" id="fname" placeholder="Enter Your First Name"> <br> <br>
+        <section class="container">
+            <form id="my-form">
+                <h1>Add User</h1>
+                <div class="msg"></div>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </div>
 
-              <label for="lname"> Last Name : </label>
-              <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name"> <br><br>
-            </div>
-        </form>
-    </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email">
+                </div>
+                <input class="btn" type="submit" value="Submit">
+            </form>
 
-    <div class="btn">
-        <button>Submit</button>
-    </div>
-    
-</body>
+            <ul id="users"></ul>
+
+
+            <!-- <ul class= "items">
+                <li class="item">Item 1</li> 
+                <li class="item">Item 2</li>
+                <li class="item">Item 3</li>
+            </ul>-->
+        </section>
+
+
+        <script src="./main.js"></script>
+    </body>
 </html>
